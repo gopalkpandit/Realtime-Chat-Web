@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <h2 id="chatTitle">💬 Chat App</h2>
+    <button id="logoutBtn">Logout</button>
+
+    <div class="chat-section">
+      <div class="users">
+        <h3>Online Users</h3>
+        <ul id="userList"></ul>
+      </div>
+
+      <div class="chat-box">
+        <h3 id="chatWith">Select a user to chat</h3>
+        <div id="messages" class="messages"></div>
+
+        <div class="msgInputBox" id="msgArea" style="display:none;">
+          <input type="text" id="msgInput" placeholder="Type message...">
+          <button id="sendBtn">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="chat.js"></script>
+</body>
+</html>
